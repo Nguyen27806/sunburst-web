@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 
 # Đọc dữ liệu
-df = pd.read_excel("education_career_success.xlsx", sheet_name="education_career_success"
+df = pd.read_excel("education_career_success.xlsx")
                    
 # Tính tổng SAT theo ngành học
 sat_by_field = df.groupby('Field_of_Study')['SAT_Score'].sum().reset_index()
